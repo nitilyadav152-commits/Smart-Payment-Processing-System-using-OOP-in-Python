@@ -79,7 +79,7 @@ class WalletPayment(Payment):
         print("\nProcessing Wallet Payment...")
         
         if amount > self.balance:
-            print(" Transaction Failed: Insufficient Balance")
+            print("❌ Transaction Failed: Insufficient Balance")
             self.final_amount = 0
             return None
         
